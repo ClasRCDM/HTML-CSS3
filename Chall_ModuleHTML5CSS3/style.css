@@ -24,60 +24,64 @@
   /* TODO Box-level */
 
 body {
-    margin: 0px; 
+    margin: auto; 
     background-image: linear-gradient(50deg, var(--degrade1)); 
-    background-attachment: fixed;
 }
+
+p {text-align: justify; text-indent: 22px; line-height: 1.55em;}
 
 header {
     background-image: linear-gradient(to left, var(--degrade1));
-    background-attachment: fixed;
-    padding: 10px;
+    padding: 20px;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.586);
 }
-header nav {width: 100%;}
+
 header h1 {text-align: center;}
+
 header p {
     text-align: center;
-    font-size: 50%;
+    font-size: 57%;
 }
+
 header a {
     padding-left: 7px;
     text-decoration: none;
     font-size: 45%;
-    color: whitesmoke;
+    color: rgb(226, 226, 226);
     transition-duration: .4s;
 }
 
-main p {font-size: 45%;}
-main picture {margin: initial;}
+main p {font-size: 46%; padding-inline: 10px;}
+
+main aside {
+    padding-bottom: 60%; 
+    position: relative;
+}
 
 article {
     background-color: #6bdcba;
     border-radius: 15px;
     font-size: 40%;
 }
-article h3 {background-color: var(--cor3); 
+
+article h3 {
+    background-color: var(--cor3); 
     border-radius: 15px 15px 0px 0px; 
     font-size: 220%; 
-    padding: 15px;
+    padding: 12px;
 }
+
 article ul {list-style-type: '\2714\00A0'; margin-left: 13%; columns: 2;}
 
-article p {padding: 10px; padding-top: 0px;}
+article p {padding: 12px; padding-top: 0px;}
 
-main aside {background-color: #00552f; margin: 0px -10px 30px -10px; padding-bottom: 60%; position: relative;}
-
-div aside {font-size: 40%; text-indent: 15px;}
-
-p {text-align: justify; text-indent: 22px; line-height: 1.55em;}
 div p {font-weight: bold;}
 
   /* TODO Inline-level */
 
 strong {text-decoration: underline; color: black;}
 
-aside iframe {position: absolute; top: 5%; left: 5%; width: 90%; height: 90%;}
+iframe {position: absolute; top: 5%; left: 5%; width: 90%; height: 90%;}
 
 div a {
     color: rgb(0, 251, 255); 
@@ -104,9 +108,9 @@ header a:hover {
 }
 header a:active {text-decoration: underline #043f2f;}
 
-div a:hover {text-decoration: underline rgb(0, 51, 39); font-style: italic;}
+div a:hover {font-style: italic;}
 
-div a::before {content: '\1F517\00A0';}
+div a::before {content: '\1F517';}
 
 /* ! Class */
 .FontAndroid {
@@ -122,13 +126,12 @@ div#CorpoPrincipal {
     padding: 10px; 
     background-color: white; 
     border-radius: 0px 0px 12px 12px;
-    box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.62);
+    box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.729);
 }
 
-footer#Criador {background-color: var(--cor0); margin-top: 10px;}
-footer#Criador p {padding: 5px; margin: 0px; text-align: center; font-size: 55%; color: #00ffd9;}
-footer#Criador a {text-decoration: none;}
+footer#Criador {background-color: var(--cor0); margin-top: 18px;}
+footer#Criador p {padding: 4px; margin: 0px; text-align: center; font-size: 50%; color: white;}
+footer#Criador a {text-decoration: none; color: rgb(41, 38, 32);}
 
 /* * IDs Animat */
-
 footer#Criador a:hover {text-decoration: underline rgb(0, 24, 14);}
