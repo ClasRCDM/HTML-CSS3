@@ -83,12 +83,6 @@ img {width: 100%;}
 
 abbr {text-decoration: none;}
 
-/* * Animat         */
-  /* TODO Box-level */
-
-input:hover {box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.613);}
-input:active {border: inset 1px;}
-
 /* ! Class */
 .FontAndroid {
     font-family: var(--font-h);
