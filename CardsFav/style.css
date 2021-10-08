@@ -93,18 +93,6 @@ label input[type="radio"]:checked + *::before {
 .shadows {
     box-shadow: var(--shadow);
 }
-/*-------------------*/
-
-/* ! IDs */
-/*-------------------*/
-
-#nav-menu {
-    position: fixed;
-    top: 30px;
-    height: 100%;
-    width: 100%;
-    pointer-events: none;
-}
 
 .button {
     background: transparent;
@@ -114,13 +102,6 @@ label input[type="radio"]:checked + *::before {
     margin-left: 16px;
     touch-action: manipulation;
     pointer-events: auto;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-    -webkit-appearance: none;
-    z-index: 99;
-}
-
-#nav-menu:focus-within .button {
-    pointer-events: none;
 }
 
 .icon-bar {
@@ -133,7 +114,20 @@ label input[type="radio"]:checked + *::before {
 .icon-bar + .icon-bar {
     margin-top: 3px;
 }
+/*-------------------*/
 
+/* ! IDs */
+#nav-menu {
+    position: fixed;
+    top: 30px;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+}
+
+#nav-menu:focus-within .button {
+    pointer-events: none;
+}
 #nav-menu:focus-within .icon-bar:nth-of-type(1) {
     transform: translate3d(0,8px,0) rotate(40deg);
 }
@@ -165,3 +159,5 @@ label input[type="radio"]:checked + *::before {
 #nav-menu:focus-within #content-menu {
     transform: none;
 }  
+
+/*-------------------*/
