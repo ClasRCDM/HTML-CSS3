@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+body, article, picture, p {padding: 0px; margin: auto;}
+
+@font-face {
+    font-family: 'Morganite ExtraBold'; /* Nome para a fonte */
+    src: url('fonts/Morganite-ExtraBold.ttf') format('truetype'); /* Nome do arquivo da fonte e seu formato */
+		
+		/* Para indicar em qual estilo e formato a fonte vai ter normalmente */
+    font-style: normal;
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'Morganite LightItalic'; /* Nome para a fonte */
+    src: url('fonts/Morganite-LightItalic.ttf') format('truetype'); /* Nome do arquivo da fonte e seu formato */
+		
+		/* Para indicar em qual estilo e formato a fonte vai ter normalmente */
+    font-style: normal;
+    font-weight: bold;
+}
+
+body {background-color: #221E1F;}
+
+article {
+    display: fixed;
+    margin-top: 30vh;
+}
+
+img {
+    width: 15%;
+    margin-top: 6em;
+    margin-left: 12em;
+}
+
+p {
+    font: 2em 'Morganite LightItalic', Arial, sans-serif; 
+    text-indent: 0.6em; padding-top: 10px;
+    color: whitesmoke;
+}
