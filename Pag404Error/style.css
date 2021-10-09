@@ -1,39 +1,62 @@
 @charset "UTF-8";
 
-body, article, picture, p {padding: 0px; margin: auto;}
+body, article, picture, main, p, h1 {padding: 0px; margin: auto;}
+
+:root {
+    --fontfamily0: 'Morganite LightItalic';
+    --fontfamily1: 'Rene Bieder';
+    --fontlightitalic: var(--fontfamily0), Arial, sans-serif;
+    --fontenormal: var(--fontfamily1), Arial, sans-serif;
+}
 
 @font-face {
-    font-family: 'Morganite ExtraBold'; /* Nome para a fonte */
-    src: url('fonts/Morganite-ExtraBold.ttf') format('truetype'); /* Nome do arquivo da fonte e seu formato */
+    font-family: 'Rene Bieder'; /* Nome para a fonte */
+    src: url('fonts/Rene-Bieder.otf') format('opentype'); /* Nome do arquivo da fonte e seu formato */
 		
 		/* Para indicar em qual estilo e formato a fonte vai ter normalmente */
     font-style: normal;
-    font-weight: bold;
+    font-weight: normal;
 }
 @font-face {
     font-family: 'Morganite LightItalic'; /* Nome para a fonte */
     src: url('fonts/Morganite-LightItalic.ttf') format('truetype'); /* Nome do arquivo da fonte e seu formato */
 		
 		/* Para indicar em qual estilo e formato a fonte vai ter normalmente */
-    font-style: normal;
-    font-weight: bold;
+    font-style: italic;
+    font-weight: normal;
 }
 
-body {background-color: #221E1F;}
+body {margin-top: 20px;}
+div {background-color: #221E1F; max-width: 1370px; max-height: 500px;}
 
 article {
-    display: fixed;
+    display: inline-block;
     margin-top: 30vh;
 }
 
 img {
-    width: 15%;
-    margin-top: 6em;
-    margin-left: 12em;
+    margin-top: -10vh;
+    margin-left: 14vh;
 }
 
-p {
-    font: 2em 'Morganite LightItalic', Arial, sans-serif; 
+h1, p {color: whitesmoke;}
+
+header p {
+    font: 2em var(--fontlightitalic);
     text-indent: 0.6em; padding-top: 10px;
-    color: whitesmoke;
+}
+
+main {
+    text-align: right;
+    margin-right: 5em;
+}
+
+main hr {margin-right: 0em; max-width: 400px;}
+
+main h1 {
+    font: 2em var(--fontenormal); word-spacing: 15px;
+}
+
+main p {
+    font: 2em var(--fontlightitalic); word-spacing: 1px;
 }
