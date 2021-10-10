@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-body, article, picture, main, img, p, h1 {padding: 0px; margin: auto;}
+/* ! Regras Gerais */
 
 :root {
     --fontfamily0: 'Morganite LightItalic';
@@ -26,103 +26,26 @@ body, article, picture, main, img, p, h1 {padding: 0px; margin: auto;}
     font-weight: normal;
 }
 
-body {margin-top: 20px; background: whitesmoke;}
+/*-------------------*/
 
-#painel {background-color: #221E1F; min-height: 480px;}
+/* * Static         */
+   /* TODO Box-level */
 
-.eu {
-    margin-top: 10vh;
-    margin-left: 157vh;
-    opacity: 0;
-    transition: .6s;
-}
+  /* TODO Inline-level */
 
-.eu:hover {opacity: 0.5;}
-.eu:active {opacity: 1;}
+/*-------------------*/
 
+/* * Animat         */
+   /* TODO Box-level */
 
-.cat {max-width: 300px;}
-.cat, pre {
-    margin-top: -28.6vh;
-    margin-left: 30vh;
-}
+  /* TODO Inline-level */
 
-.eu + * :hover {opacity: 0.8;}
+/*-------------------*/
 
-pre {
-    font: 2em var(--fontenormal); word-spacing: 4px;
-    margin-top: -10em;
+/* ! IDs */
 
-}
+/*-------------------*/
 
-pre a {
-    text-decoration: none; color: whitesmoke; opacity: 0.8;
-    transition: .4s;
-}
-pre a:hover {opacity: 1;}
+/* ! Class */
 
-pre hr {
-    margin: -40px;
-    padding-left: 65px;
-    margin-left: 0px;
-}
-
-h1, p, pre {color: whitesmoke;}
-
-header p {
-    font: 2em var(--fontlightitalic);
-    text-indent: 0.6em; padding-top: 10px;
-}
-
-main {
-    text-align: right;
-    margin-right: 5em;
-}
-
-hr {margin-right: 0em; max-width: 400px;}
-
-main h1 {
-    font: 2em var(--fontenormal); word-spacing: 13px;
-}
-
-main p {
-    font: 2em var(--fontlightitalic); word-spacing: 1px;
-}
-
-nav {margin-top: 7vh;}
-nav a {
-    background-color: #332D2E;
-    color: #6E6064;
-    text-decoration: none;
-    padding: 20px 45px;
-    transition: .4s;
-}
-nav a:hover {
-    color: whitesmoke; background: #3B3435;
-    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.612);
-}
-
-/* ! @MEDIA */
-@media (max-width: 480px) {
-    #painel header {padding-bottom: 23px;}
-    #painel a {font-size: 0.6em; margin-right: 47px;}
-    #painel h1 {word-spacing: 1.5px; text-align: center; padding-left: 85px;}
-    #painel h1, #painel p {font-size: 1.4em;}
-    #painel p, #painel hr {padding-right: 15px;}
-    #painel hr {max-width: 270px;}
-
-    #octocat img {
-        margin-top: -29vh;
-        margin-left: 13vh;
-    }
-    #octocat pre {
-        font-size: 1.3em;
-        margin-top: -14.1em;
-        margin-left: 2em;
-    }
-    #octocat pre hr {
-        margin-top: -1.1em;
-        max-width: 240px;
-    }
-    .eu {display: none;}
-}
+/*-------------------*/
