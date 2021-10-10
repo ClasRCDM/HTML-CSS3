@@ -3,12 +3,14 @@
 /* ! Regras Gerais */
 
 :root {
-    --fontfamily0: 'Morganite LightItalic';
-    --fontfamily1: 'Rene Bieder';
-    --fontlightitalic: var(--fontfamily0), Arial, sans-serif;
-    --fontenormal: var(--fontfamily1), Arial, sans-serif;
+    --ftfly0: 'Morganite LightItalic';
+    --ftfly1: 'Rene Bieder';
+
+    --ftbkgclr: #f1e4e4; 
+    --bkgdclr: #221E1F;
 }
 
+/* Fontes */
 @font-face {
     font-family: 'Rene Bieder'; /* Nome para a fonte */
     src: url('fonts/Rene-Bieder.otf') format('opentype'); /* Nome do arquivo da fonte e seu formato */
@@ -30,8 +32,36 @@
 
 /* * Static         */
    /* TODO Box-level */
+   body {
+    padding: 0px; margin: auto;
+   }
+   header p {
+     padding-top: 14px; padding-inline: 15px;
+    }
+   main {text-align: center;}
+   header p, main p {
+    font-family: var(--ftfly0);
+    letter-spacing: 5px;
+    line-height: 0.9em;
+    font-size: clamp(1.6rem, 1.8vw, 3rem);
+   }
+   main h1 {font-weight: normal;}
+   main h1, blockquote pre {
+    font-family: var(--ftfly1);
+    line-height: 1em;
+   }
+
+   img {
+     margin-top: -14.5em;
+     transition: .5s;
+   }
 
   /* TODO Inline-level */
+
+  h1 hr {
+    width: clamp(250px, 30%, 40rem);
+    padding-top: 2px;
+  }
 
 /*-------------------*/
 
@@ -43,9 +73,32 @@
 /*-------------------*/
 
 /* ! IDs */
+div#painel {
+    background-color: var(--bkgdclr); color: var(--ftbkgclr);
+    box-shadow: -0.55px 0px 10px #000000bd;
+    text-align: right;
+    height: min(470px);
+    font-size: clamp(0.8rem, 1.5vw, 2rem);  
+}
+
+div#octocat {
+  background-color: transparent;
+}
 
 /*-------------------*/
 
 /* ! Class */
-
+.chao {margin-top: -4em;}
 /*-------------------*/
+
+/* ! @MEDIA */
+/*-------------------*/
+@media (max-width: 520px) {
+  div#octocat img {
+    margin-left: -10%;
+  }
+}
+@media (min-width: 1600px) {
+  main p br {display: none;}
+  main h1, main p {margin: -10px;}
+}
