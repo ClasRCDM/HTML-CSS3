@@ -8,6 +8,8 @@
 
     --ftbkgclr: #f1e4e4; 
     --bkgdclr: #221E1F;
+
+    --pnlclr: blanchedalmond;
 }
 
 /* Fontes */
@@ -63,12 +65,20 @@
     padding-top: 2px;
   }
 
+  div a {color: var(--pnlclr); opacity: 0.6; transition: .6s;}
+
 /*-------------------*/
 
 /* * Animat         */
    /* TODO Box-level */
 
+  div#octocat:hover p {opacity: 1;}
+  
   /* TODO Inline-level */
+  div a:hover {
+    text-decoration: underline white; color: white;
+    opacity: 1;
+  }
 
 /*-------------------*/
 
@@ -84,6 +94,14 @@ div#painel {
 div#octocat {
   background-color: transparent;
 }
+#octocat p {font-size: clamp(0.95rem, 1.15vw, 1rem);}
+
+#octocat p {
+  margin-top: -8em; margin-left: 9em;
+  color: var(--pnlclr);
+  opacity: 0;
+  transition: .5s;
+}
 
 /*-------------------*/
 
@@ -96,6 +114,10 @@ div#octocat {
 @media (max-width: 520px) {
   div#octocat img {
     margin-left: -10%;
+  }
+  div#octocat p {
+    text-align: center;
+    margin-top: -10em;
   }
 }
 @media (min-width: 1600px) {
