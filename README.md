@@ -13,3 +13,22 @@
 ![image](https://user-images.githubusercontent.com/68075842/136721962-1f0825c2-2f11-435d-8ca1-53b7c9c20aa6.png)
 
 <hr>
+
+## My process
+
+- ### Built with
+
+* ```html
+    <!DOCTYPE html>
+    ```
+* ```html
+    <link rel="stylesheet" href="style.css">
+    ```
+    
+## Author
+
+Web     | Name
+------  | :------:
+GitHub  | [ClasRCDM](https://github.com/clasrcdm)
+Twitter | [@RaphaelCalixtDM](https://twitter.com/RaphaelCalixtDM)
+
