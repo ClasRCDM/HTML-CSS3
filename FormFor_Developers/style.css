@@ -1,12 +1,33 @@
 @charset "UTF-8";
 
 /* ! Regras Gerais */
-:root {}
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   color: white;
+}
+
+:root {
+   --fndcr: #101B29;
+   --fdsctn: #000E20;
+}
 
 /*-------------------*/
 
 /* * Static         */
    /* TODO Box-level */
+   body {background: var(--fndcr);}
+
+   header, section {
+      background-color: var(--fdsctn);
+      margin: auto; padding: 15px; 
+      width: 700px;
+   }
+
+   header {border-radius: 20px 20px 0px 0px;}
+   section {border-radius: 0px 0px 20px 20px;}
+
   /* TODO Inline-level */
 
 /*-------------------*/
